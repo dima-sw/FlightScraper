@@ -1,0 +1,2 @@
+# FlightScraper
+ This repository offers a suite of Python scripts designed to facilitate the retrieval and analysis of flight information, enabling users to efficiently find the most cost-effective air travel options. From web scraping Google Flights data to parsing and organizing flight details, this collection provides robust tools for optimizing travel plans. Whether seeking the best deals or building upon existing solutions, these scripts offer a versatile foundation for flight-related projects.
