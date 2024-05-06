@@ -1,0 +1,488 @@
+{
+    "citiesWeekEnd": {
+        "maxPrice": 50,
+        "cities": {
+            "Albania": [
+                "Tirana",
+                "Durres",
+                "Vlore",
+                "Sarandë"
+            ],
+            "Andorra": [
+                "Andorra la Vella"
+            ],
+            "Armenia": [
+                "Yerevan",
+                "Gyumri",
+                "Vanadzor"
+            ],
+            "Austria": [
+                "Vienna",
+                "Salzburg",
+                "Innsbruck"
+            ],
+            "Azerbaijan": [
+                "Baku",
+                "Ganja",
+                "Sumqayit"
+            ],
+            "Belgium": [
+                "Brussels",
+                "Antwerp",
+                "Charleroi"
+            ],
+            "Bosnia and Herzegovina": [
+                "Sarajevo",
+                "Banja Luka",
+                "Mostar"
+            ],
+            "Bulgaria": [
+                "Sofia",
+                "Varna",
+                "Burgas"
+            ],
+            "Croatia": [
+                "Zagreb",
+                "Split",
+                "Dubrovnik",
+                "Rijeka",
+                "Pula"
+            ],
+            "Cyprus": [
+                "Nicosia",
+                "Larnaca",
+                "Paphos"
+            ],
+            "Czech Republic": [
+                "Prague",
+                "Brno",
+                "Ostrava"
+            ],
+            "Denmark": [
+                "Copenhagen",
+                "Aarhus",
+                "Aalborg"
+            ],
+            "Estonia": [
+                "Tallinn",
+                "Tartu",
+                "Pärnu"
+            ],
+            "Finland": [
+                "Helsinki",
+                "Tampere",
+                "Turku"
+            ],
+            "France": [
+                "Paris",
+                "Marseille",
+                "Lyon"
+            ],
+            "Georgia": [
+                "Tbilisi",
+                "Batumi",
+                "Kutaisi"
+            ],
+            "Germany": [
+                "Berlin",
+                "Munich",
+                "Frankfurt",
+                "Cologne"
+            ],
+            "Greece": [
+                "Athens",
+                "Thessaloniki",
+                "Heraklion",
+                "Santorini",
+                "Mykonos",
+                "Corfu"
+            ],
+            "Hungary": [
+                "Budapest",
+                "Debrecen",
+                "Szeged"
+            ],
+            "Iceland": [
+                "Reykjavik",
+                "Keflavik",
+                "Akureyri"
+            ],
+            "Ireland": [
+                "Dublin",
+                "Cork",
+                "Shannon"
+            ],
+            "Italy": [
+                "Rome",
+                "Milan",
+                "Naples",
+                "Genova",
+                "Turin",
+                "Venice",
+                "Rome",
+                "Palermo",
+                "Catania",
+                "Florence",
+                "Bologna"
+            ],
+            "Latvia": [
+                "Riga",
+                "Daugavpils",
+                "Liepaja"
+            ],
+            "Liechtenstein": [
+                "Vaduz"
+            ],
+            "Lithuania": [
+                "Vilnius",
+                "Kaunas",
+                "Klaipeda"
+            ],
+            "Luxembourg": [
+                "Luxembourg City"
+            ],
+            "Malta": [
+                "Valletta",
+                "Luqa"
+            ],
+            "Moldova": [
+                "Chisinau",
+                "Tiraspol",
+                "Bălți"
+            ],
+            "Monaco": [
+                "Monaco"
+            ],
+            "Montenegro": [
+                "Podgorica",
+                "Tivat"
+            ],
+            "Netherlands": [
+                "Amsterdam",
+                "Rotterdam",
+                "The Hague"
+            ],
+            "North Macedonia": [
+                "Skopje",
+                "Bitola",
+                "Ohrid"
+            ],
+            "Norway": [
+                "Oslo",
+                "Bergen",
+                "Trondheim"
+            ],
+            "Poland": [
+                "Warsaw",
+                "Krakow",
+                "Gdansk"
+            ],
+            "Portugal": [
+                "Lisbon",
+                "Porto",
+                "Faro"
+            ],
+            "Romania": [
+                "Bucharest",
+                "Cluj-Napoca",
+                "Timisoara"
+            ],
+            "Serbia": [
+                "Belgrade",
+                "Novi Sad",
+                "Niš"
+            ],
+            "Slovakia": [
+                "Bratislava",
+                "Kosice",
+                "Žilina"
+            ],
+            "Slovenia": [
+                "Ljubljana",
+                "Maribor",
+                "Koper"
+            ],
+            "Spain": [
+                "Madrid",
+                "Barcelona",
+                "Palma de Mallorca",
+                "Ibiza",
+                "Valencia",
+                "Granada",
+                "Gibralt",
+                "Seville"
+            ],
+            "Sweden": [
+                "Stockholm",
+                "Gothenburg",
+                "Malmo"
+            ],
+            "Switzerland": [
+                "Zurich",
+                "Geneva",
+                "Basel"
+            ],
+            "Turkey": [
+                "Istanbul",
+                "Ankara",
+                "Izmir"
+            ],
+            "United Kingdom": [
+                "London",
+                "Manchester",
+                "Birmingham"
+            ]
+        }
+    },
+    "citiesWeek": {
+        "maxPrice": 150,
+        "cities": {
+            "Austria": [
+                "Vienna"
+            ],
+            "Belgium": [
+                "Brussels"
+            ],
+            "Bulgaria": [
+                "Sofia"
+            ],
+            "Croatia": [
+                "Zagreb",
+                "Dubrovnik"
+            ],
+            "Cyprus": [
+                "Nicosia"
+            ],
+            "Czech Republic": [
+                "Prague"
+            ],
+            "Denmark": [
+                "Copenhagen"
+            ],
+            "Estonia": [
+                "Tallinn"
+            ],
+            "Finland": [
+                "Helsinki"
+            ],
+            "France": [
+                "Paris"
+            ],
+            "Georgia": [
+                "Tbilisi"
+            ],
+            "Germany": [
+                "Berlin",
+                "Frankfurt"
+            ],
+            "Greece": [
+                "Athens",
+                "Thessaloniki",
+                "Corfu",
+                "Santorini",
+                "Mykonos"
+            ],
+            "Hungary": [
+                "Budapest"
+            ],
+            "Iceland": [
+                "Reykjavik",
+                "Keflavik",
+                "Akureyri"
+            ],
+            "Ireland": [
+                "Dublin"
+            ],
+            "Latvia": [
+                "Riga"
+            ],
+            "Liechtenstein": [
+                "Vaduz"
+            ],
+            "Lithuania": [
+                "Vilnius"
+            ],
+            "Luxembourg": [
+                "Luxembourg"
+            ],
+            "Malta": [
+                "Valletta",
+                "Malta"
+            ],
+            "Moldova": [
+                "Chisinau"
+            ],
+            "Monaco": [
+                "Monaco"
+            ],
+            "Montenegro": [
+                "Podgorica"
+            ],
+            "Netherlands": [
+                "Amsterdam"
+            ],
+            "North Macedonia": [
+                "Skopje"
+            ],
+            "Norway": [
+                "Oslo"
+            ],
+            "Poland": [
+                "Warsaw"
+            ],
+            "Portugal": [
+                "Lisbon",
+                "Porto"
+            ],
+            "Romania": [
+                "Bucharest"
+            ],
+            "Serbia": [
+                "Belgrade"
+            ],
+            "Slovakia": [
+                "Bratislava"
+            ],
+            "Slovenia": [
+                "Ljubljana"
+            ],
+            "Spain": [
+                "Madrid",
+                "Barcelona",
+                "Palma de Mallorca",
+                "Ibiza",
+                "Valencia",
+                "Granada",
+                "Gibralt",
+                "Seville"
+            ],
+            "Sweden": [
+                "Stockholm"
+            ],
+            "Switzerland": [
+                "Zurich"
+            ],
+            "Turkey": [
+                "Istanbul"
+            ],
+            "United Kingdom": [
+                "London"
+            ],
+            "Emirati Arabi": [
+                "Dubai",
+                "Abu Dhabi"
+            ],
+            "Egypt": [
+                "Cairo",
+                "Sharm El-Sheikh"
+            ],
+            "Africa Safari": [
+                "Botswana",
+                "Tanzania",
+                "Zimbabwe",
+                "Kenya",
+                "Sudafrica"
+            ],
+            "Morocco": [
+                "Casablanca"
+            ]
+        }
+    },
+    "cities2Week": {
+        "maxPrice": 500,
+        "cities": {
+            "Australia": [
+                "Sydney",
+                "Melbourne",
+                "Brisbane"
+            ],
+            "Japan": [
+                "Tokyo",
+                "Osaka",
+                "Nagoya"
+            ],
+            "South Korea": [
+                "Seoul",
+                "Busan",
+                "Jeju"
+            ],
+            "China": [
+                "Beijing",
+                "Shanghai",
+                "Guangzhou"
+            ],
+            "Indonesia": [
+                "Jakarta",
+                "Denpasar",
+                "Surabaya"
+            ],
+            "Philippines": [
+                "Manila",
+                "Cebu",
+                "Davao"
+            ],
+            "Thailand": [
+                "Bangkok",
+                "Phuket",
+                "Chiang Mai"
+            ],
+            "India": [
+                "Delhi",
+                "Mumbai",
+                "Bengaluru"
+            ],
+            "Vietnam": [
+                "Ho Chi Minh City",
+                "Hanoi",
+                "Da Nang"
+            ],
+            "Egypt": [
+                "Cairo",
+                "Sharm El Sheikh",
+                "Hurghada"
+            ],
+            "United States": [
+                "New York",
+                "Los Angeles",
+                "Chicago"
+            ],
+            "Mexico": [
+                "Mexico City",
+                "Cancun",
+                "Guadalajara"
+            ],
+            "Venezuela": [
+                "Caracas",
+                "Maracaibo"
+            ],
+            "Brazil": [
+                "Sao Paulo",
+                "Rio de Janeiro",
+                "Brasilia"
+            ],
+            "Canada": [
+                "Toronto",
+                "Vancouver",
+                "Montreal"
+            ],
+            "Argentina": [
+                "Buenos Aires",
+                "Cordoba",
+                "Rosario"
+            ],
+            "Singapore": [
+                "Singapore"
+            ],
+            "Hawaii": [
+                "Honolulu",
+                "Kahului",
+                "Kona"
+            ],
+            "Maldives": [
+                "Male",
+                "Gan",
+                "Hanimaadhoo"
+            ]
+        }
+    }
+}
