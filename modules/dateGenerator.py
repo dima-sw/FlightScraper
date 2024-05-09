@@ -42,7 +42,7 @@ def dataGen(dayIn, dayEnd, weeks, monthsRange, fromMonth, weeksStep=1):
     while current_date <= end_date:
         start_date = current_date - timedelta(days=current_date.weekday() - dayIn)
 
-        end_datet = start_date + timedelta(days=endStep*weeks)
+        end_datet = start_date + timedelta(days=endStep+(7*weeks))
         dates.append({"startDate": start_date.strftime("%Y-%m-%d"), "endDate": end_datet.strftime("%Y-%m-%d")})
         
         current_date = current_date + timedelta(days=7*weeksStep)
@@ -52,4 +52,4 @@ def dataGen(dayIn, dayEnd, weeks, monthsRange, fromMonth, weeksStep=1):
 
 
 
-print(dataGen(0,4,1,1,5))
+#print(dataGen(0,4,1,1,5))
