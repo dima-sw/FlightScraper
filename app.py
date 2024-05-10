@@ -231,7 +231,7 @@ class FlightScraperApp(tk.Tk):
         # Footer
         self.footer_frame = ttk.Frame(self)
         self.footer_frame.pack(side="bottom", fill="x")
-        self.footer_button = ttk.Button(self.footer_frame, text="Scrap", command=lambda: self.scrap())
+        self.footer_button = ttk.Button(self.footer_frame, text="Scrap", command=self.scrap_button_clicked)
         self.footer_button.pack(side="right", padx=10, pady=10)
         # Initialize progress bars
         self.from_city_progressbar = ttk.Progressbar(self.footer_frame, orient="horizontal", length=200, mode="determinate")
@@ -251,7 +251,10 @@ class FlightScraperApp(tk.Tk):
         # Popola i dropdown dei paesi e delle città
         self.populate_countries(self.from_country_dropdown)
         self.populate_countries(self.to_country_dropdown)
-        
+
+    def scrap_button_clicked(self):
+        # Run the scrap coroutine asynchronously
+        asyncio.run(self.scrap())    
 
     def scale_widgets(self, event):
         # Ottieni il valore selezionato dalla combobox
@@ -370,7 +373,7 @@ class FlightScraperApp(tk.Tk):
             lista.delete(selected_index)  # Remove the selected item from the listbox
             if selected_country in data:
                 del data[selected_country]
-    def scrap(self):
+    async def scrap(self):
         self.foundFlights=[]
         selected_date_type = self.date_type_var.get()  # Get the value of the selected date type
     
@@ -384,25 +387,31 @@ class FlightScraperApp(tk.Tk):
             start_date = self.from_date_entry.get_date().strftime("%Y-%m-%d")
             end_date = self.to_date_entry.get_date().strftime("%Y-%m-%d")
             dates = [{"startDate": start_date, "endDate": end_date}]
+        total_tasks = len(dates) * len(self.from_countries_dict) * len(self.to_countries_dict)
+        completed_tasks = 0
         for date in dates:
             for fromCountry, fromCities in self.from_countries_dict.items():
                 for fromCity in fromCities:
                     for toCountry, toCities in self.to_countries_dict.items():
                         for toCity in toCities:
-                            pass
                             flight_info, min_price = APIScrap(fromCity, toCity, date['startDate'], date['endDate'], file=False)
-                            
-                            self.foundFlights.append({
-                                'date': date,
-                                'cityFrom': fromCity,
-                                'countryTo': toCountry,
-                                'cityTo': toCity,
-                                'flightInfo': flight_info,
-                                'min_price': min_price
-                             })
+                            if min_price <int(self.budget_entry.get()):
+                                self.foundFlights.append({
+                                    'date': date,
+                                    'cityFrom': fromCity,
+                                    'countryTo': toCountry,
+                                    'cityTo': toCity,
+                                    'flightInfo': flight_info,
+                                    'min_price': min_price
+                                })
+                                                    # Update progress bar
+                            completed_tasks += 1
+                            progress = (completed_tasks / total_tasks) * 100
+                            await self.update_progress(progress)
         self.display_flight_info()
     #Something whit Async is not working, it keeps stuking the App
-  
+    async def update_progress(self, progress):
+        self.date_progressbar['value'] = progress
     def display_flight_info(self):
         # Clear the listbox
         self.flight_info_listbox.delete(0, tk.END)
