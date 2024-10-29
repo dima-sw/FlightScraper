@@ -1,21 +1,28 @@
 from tqdm import tqdm
-import scrapFlight
-import mailSend
-import dateGenerator
+import os
+import modules.scrapFlight as scrapFlight
+import modules.mailSend as mailSend
+import modules.dateGenerator as  dateGenerator
 import json
-from dateGenerator import Weekday
+from modules.dateGenerator import Weekday
 origin="Naples"
 
-# Open the JSON file
-with open('cities.json', 'r') as file:
-    data_dict = json.load(file)
-    weekEnd=data_dict["citiesWeekEnd"]["cities"]
-    weekEndPrice=data_dict["citiesWeekEnd"]["maxPrice"]
-    oneWeek= data_dict["citiesWeek"]["cities"]
-    oneWeekPrice= data_dict["citiesWeek"]["maxPrice"]
-    twoWeek= data_dict["cities2Week"]["cities"]
-    twoWeekPrice= data_dict["cities2Week"]["maxPrice"]
 
+file_path = os.path.join(os.getcwd(), 'cities.json')
+# Open the JSON file
+# Check if the file exists
+if os.path.exists(file_path):
+    # Open the JSON file
+    with open(file_path, 'r') as file:
+        data_dict = json.load(file)
+        weekEnd = data_dict["citiesWeekEnd"]["cities"]
+        weekEndPrice = data_dict["citiesWeekEnd"]["maxPrice"]
+        oneWeek = data_dict["citiesWeek"]["cities"]
+        oneWeekPrice = data_dict["citiesWeek"]["maxPrice"]
+        twoWeek = data_dict["cities2Week"]["cities"]
+        twoWeekPrice = data_dict["cities2Week"]["maxPrice"]
+else:
+    print(f"File {file_path} not found")
 
 datesWeekEnd=dateGenerator.dataGen(Weekday.Friday.value,Weekday.Sunday.value,1,6,5)
 datesTwoWeeks=dateGenerator.dataGen(Weekday.Friday.value,Weekday.Sunday.value,2,6,5)
